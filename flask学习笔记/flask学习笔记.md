@@ -32,10 +32,10 @@ python helloworld.py
 1. Flask对象初始化参数
 
    ```
-   1.import_name Flask所在的包，传__name__就可以
-   2.static_url_path 静态文件访问路径，可以不传，默认为：/+static_folder
-   3.static_folder  默认为static
-   4.templates_folder  默认为templates
+   1.import_name        解释：Flask所在的包，传__name__就可以
+   2.static_url_path    解释：静态文件访问路径，可以不传，默认为：/static_folder
+   3.static_folder      解释：默认为static
+   4.templates_folder   解释：默认为templates
    ```
 
    
@@ -160,7 +160,7 @@ print(app.url_map)
 1. 创建一个蓝图对象
 
    ```python
-   user_bp=Blueprint('user',__name__)# 相当于app=Flask(__name__)参数也一样 没有默认的static了
+   user_bp=Blueprint('user',__name__)# 相当于app=Flask(__name__)参数也一样 不同的是没有默认的static文件夹了
    ```
 
    
@@ -274,7 +274,7 @@ Content-Type：application/json
 body
 ```
 
-1. 模板响应 使用 return rend_template()  （后续需要时再学）
+1. 模板响应 使用 return rend_template()  （后续需要时再学，前后端分离用的很少）
 2. 重定向  return  redirect(‘url’)（链接到别的页面需要时学习）
 3. 返回JSON
 
@@ -328,7 +328,7 @@ return json.dump({
 
 #### 1.Cookie
 
-Cookie是呗设置在响应头中的键值对
+Cookie是被设置在响应头中的键值对
 
 ```python
 设置 #resp为make_response设置的响应体格式
@@ -355,7 +355,7 @@ username=session.get('username')
 
 设置密钥SECRT_KEY   
 SECRT_KEY='dsadaffasdfasd'
-使用上面的设置环境变量的方式设置均可
+使用上面的设置环境变量的方式设置均可设置SECRT_KEY
 ```
 
 
@@ -369,16 +369,36 @@ SECRT_KEY='dsadaffasdfasd'
 * abort方法
 
 ```python
+抛出一个给定状态码的HTTPException或者指定响应，例如想要用一个页面未找到异常来终止请求，你可以调用abort（404）
 
+abort参数使用状态码
 ```
 
 
 
 2. 捕获错误
 
+flask后端发生错误没有抛出时，会查询错误处理方法做相应处理，没有定义错误处理方法才会把错误直接返回给前端
+
+```python
+@app.errorhandler(500)       #错误处理方法
+def internal_server_error(e):  
+    return '服务器搬家了'
+
+
+# 捕获指定异常
+@app.errorhandler(ZeroDivisionError)
+def zero_division_error(e):
+    return '除数不能为0'
+```
+
+
+
 ### 4.2请求钩子
 
 中间件的说明（所有的views函数都需要遵循的处理流程）
+
+首先顺序执行所有pre函数，然后视图处理，最后倒序执行所有after函数
 
 ![](中间件的说明.jpg)
 
@@ -407,5 +427,51 @@ def fun():
 
 ### 4.3上下文
 
+上下文：分为两种 请求上下文和应用上下文
 
+flask中上下文的对象：相当于一个容器，保存了Flask程序运行过程中的一些信息。
+
+#### 1.请求上下文
+
+request，session为请求上下文，request为全局变量，当两个视图函数同时进行处理的时候同一个request代表的数据是不一样的，会根据上下文改变而改变。多线程操作
+
+request封装了HTTP请求信息，针对的是http请求。
+
+session用来记录请求会话信息，针对的是用户信息。
+
+#### 2.应用上下文
+
+1. current_app
+
+   current_app.config.get('Itcast')   #操作current_app等价于操作app
+
+   在别的蓝图中使用不方便是不需要导入使用current_app
+
+   app.redis_id="..."定义变量存储在app中 
+
+   在别的蓝图中使用current_app使用变量 用于数据库或者其他的应用
+
+   在多应用模型中，即定义了多个app，在不同的app中使用current_app代表不一样的app
+
+2. g对象（理解为一个容器）
+
+   本次请求存储在g对象中在本次请求之内都可以获取g中的数据，每次请求都会重置g对象
+
+   ```python
+   def db_query():
+       uid=g.user_id;
+       uname=g.uname
+     	# 数据库查询uid
+       return
+   @app.route('/')
+   def get_user_profile():
+       user_id=123
+       uname='itcast'
+       g.user_id=user_id
+       g.uname=db_query()
+       db_query()
+       return
+   ```
+
+   
 
