@@ -1,4 +1,7 @@
 from flask import Flask
+import tensorflow as tf
+
+
 
 app = Flask(__name__)
 
@@ -10,3 +13,5 @@ def hello_world():  # put application's code here
 
 if __name__ == '__main__':
     app.run()
+
+
