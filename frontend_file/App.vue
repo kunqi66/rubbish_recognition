@@ -1,5 +1,10 @@
 <script>
 	export default {
+		globalData: {
+			uid: -1,
+			urlRoot: "http://127.0.0.1:5000/",
+			token:"wutoken",
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},

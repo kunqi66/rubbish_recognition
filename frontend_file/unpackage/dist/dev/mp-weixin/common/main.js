@@ -100,6 +100,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
+  globalData: {
+    uid: -1,
+    urlRoot: "http://127.0.0.1:5000/",
+    token: "wutoken"
+  },
   onLaunch: function onLaunch() {
     console.log('App Launch');
   },

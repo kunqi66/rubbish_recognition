@@ -769,7 +769,7 @@ function populateParameters(result) {
   // wx.getAccountInfoSync
 
   var parameters = {
-    appId: "",
+    appId: "__UNI__609FE21",
     appName: "frontend_file",
     appVersion: "1.0.0",
     appVersionCode: "100",
@@ -868,7 +868,7 @@ var getAppBaseInfo = {
     var _hostName = getHostName(result);
     var hostLanguage = language.replace('_', '-');
     result = sortObject(Object.assign(result, {
-      appId: "",
+      appId: "__UNI__609FE21",
       appName: "frontend_file",
       appVersion: "1.0.0",
       appVersionCode: "100",
@@ -1526,7 +1526,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8880,7 +8880,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8901,14 +8901,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9004,7 +9004,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -19128,7 +19128,13 @@ exports.default = _default;
 /* 168 */,
 /* 169 */,
 /* 170 */,
-/* 171 */
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */
 /*!************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-image/props.js ***!
   \************************************************************************************************************************/
@@ -19230,12 +19236,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */
 /*!*******************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \*******************************************************************************************************************************/
@@ -19312,14 +19318,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
 /* 184 */,
-/* 185 */
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */
 /*!***********************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-form/props.js ***!
   \***********************************************************************************************************************/
@@ -19382,12 +19388,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */
 /*!****************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-form-item/props.js ***!
   \****************************************************************************************************************************/
@@ -19453,14 +19459,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */,
 /* 198 */,
-/* 199 */
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */
 /*!************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-input/props.js ***!
   \************************************************************************************************************************/
@@ -19665,12 +19671,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */
 /*!*****************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/libs/mixin/button.js ***!
   \*****************************************************************************************************************/
@@ -19700,7 +19706,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 206 */
+/* 212 */
 /*!*******************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \*******************************************************************************************************************/
@@ -19742,7 +19748,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 207 */
+/* 213 */
 /*!*************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-button/props.js ***!
   \*************************************************************************************************************************/
@@ -19921,12 +19927,6 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 208 */,
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
 /* 214 */,
 /* 215 */,
 /* 216 */,
@@ -19934,8 +19934,111 @@ exports.default = _default;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */,
-/* 222 */
+/* 221 */
+/*!************************************************************************************************************************!*\
+  !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-popup/props.js ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.popup.show
+    },
+    // 是否显示遮罩
+    overlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.overlay
+    },
+    // 弹出的方向，可选值为 top bottom right left center
+    mode: {
+      type: String,
+      default: uni.$u.props.popup.mode
+    },
+    // 动画时长，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.popup.duration
+    },
+    // 是否显示关闭图标
+    closeable: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeable
+    },
+    // 自定义遮罩的样式
+    overlayStyle: {
+      type: [Object, String],
+      default: uni.$u.props.popup.overlayStyle
+    },
+    // 点击遮罩是否关闭弹窗
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeOnClickOverlay
+    },
+    // 层级
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.popup.zIndex
+    },
+    // 是否为iPhoneX留出底部安全距离
+    safeAreaInsetBottom: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetBottom
+    },
+    // 是否留出顶部安全距离（状态栏高度）
+    safeAreaInsetTop: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetTop
+    },
+    // 自定义关闭图标位置，top-left为左上角，top-right为右上角，bottom-left为左下角，bottom-right为右下角
+    closeIconPos: {
+      type: String,
+      default: uni.$u.props.popup.closeIconPos
+    },
+    // 是否显示圆角
+    round: {
+      type: [Boolean, String, Number],
+      default: uni.$u.props.popup.round
+    },
+    // mode=center，也即中部弹出时，是否使用缩放模式
+    zoom: {
+      type: Boolean,
+      default: uni.$u.props.popup.zoom
+    },
+    // 弹窗背景色，设置为transparent可去除白色背景
+    bgColor: {
+      type: String,
+      default: uni.$u.props.popup.bgColor
+    },
+    // 遮罩的透明度，0-1之间
+    overlayOpacity: {
+      type: [Number, String],
+      default: uni.$u.props.popup.overlayOpacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */
 /*!*************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/libs/util/async-validator.js ***!
   \*************************************************************************************************************************/
@@ -19973,7 +20076,7 @@ function _extends() {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
+if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"frontend_file","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
       if (errors.every(function (e) {
@@ -21116,10 +21219,10 @@ Schema.warning = warning;
 Schema.messages = messages;
 var _default = Schema; // # sourceMappingURL=index.js.map
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 223)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/node-libs-browser/mock/process.js */ 230)))
 
 /***/ }),
-/* 223 */
+/* 230 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -21150,7 +21253,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 224);
+        if (!path) path = __webpack_require__(/*! path */ 231);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -21163,7 +21266,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 224 */
+/* 231 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -21473,15 +21576,36 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 223)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 230)))
 
 /***/ }),
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */
 /*!***********************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \***********************************************************************************************************************/
@@ -21712,7 +21836,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 231 */
+/* 259 */
 /*!***********************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-icon/props.js ***!
   \***********************************************************************************************************************/
@@ -21819,14 +21943,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */
 /*!***********************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-line/props.js ***!
   \***********************************************************************************************************************/
@@ -21877,21 +22001,63 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */
+/*!**************************************************************************************************************************!*\
+  !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-overlay/props.js ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show
+    },
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex
+    },
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration
+    },
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */
 /*!*****************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-transition/props.js ***!
   \*****************************************************************************************************************************/
@@ -21933,7 +22099,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 255 */
+/* 284 */
 /*!**********************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \**********************************************************************************************************************************/
@@ -21950,7 +22116,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 256));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 285));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -22042,7 +22208,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 256 */
+/* 285 */
 /*!************************************************************************************************************************************!*\
   !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \************************************************************************************************************************************/
@@ -22233,6 +22399,115 @@ var _default = {
   }
 };
 exports.default = _default;
+
+/***/ }),
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */
+/*!*****************************************************************************************************************************!*\
+  !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-status-bar/props.js ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    bgColor: {
+      type: String,
+      default: uni.$u.props.statusBar.bgColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */
+/*!******************************************************************************************************************************!*\
+  !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {}
+};
+exports.default = _default;
+
+/***/ }),
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */
+/*!**********************************************************************************************************************!*\
+  !*** D:/Desktop/graduation_project/rubbish_recognition/frontend_file/uni_modules/uview-ui/components/u-gap/props.js ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 背景颜色（默认transparent）
+    bgColor: {
+      type: String,
+      default: uni.$u.props.gap.bgColor
+    },
+    // 分割槽高度，单位px（默认30）
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.gap.height
+    },
+    // 与上一个组件的距离
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginTop
+    },
+    // 与下一个组件的距离
+    marginBottom: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginBottom
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ })
 ]]);

@@ -7,6 +7,10 @@
     "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
     "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
     "u--input": "/uni_modules/uview-ui/components/u--input/u--input",
-    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
+    "u-form": "/uni_modules/uview-ui/components/u-form/u-form",
+    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
+    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast"
   }
 }

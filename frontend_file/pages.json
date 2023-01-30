@@ -10,7 +10,16 @@
 				"enablePullDownRefresh": true
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/Entity/Register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

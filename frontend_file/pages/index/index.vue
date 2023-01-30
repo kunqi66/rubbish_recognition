@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view style="height: 100%;">
-			<u--image style="font-size: 20% 20%;" src="/static/huanbaolvsebeijing-27756047_1.jpg" mode="widthFix">
+			<u--image style="font-size: 50% 50%;" src="/static/huanbaolvsebeijing-27756047_1.jpg" mode="widthFix">
 				 <template v-slot:loading>
 					<u-loading-icon color="red"></u-loading-icon>
 				  </template>
@@ -17,7 +17,7 @@
 					<u-form-item
 					 label="账号:" prop="userInfo.account" ref="item1">
 					<u--input
-							placeholder="请输入账号"
+							placeholder="请输入邮箱"
 							prefixIcon="account"
 							v-model="model1.userInfo.account"
 							prefixIconStyle="font-size: 20px;color: #909399"
@@ -40,12 +40,12 @@
 		
 		<view class="button_home">
 			<u-button type="primary" :plain="true" text="登录" @click="login()"></u-button>
-			<view @click="toweb" style="display: inline-block; width: 160rpx;">
+			<view @click="resetPasswd()" style="display: inline-block; width: 160rpx;">
 				<navigator url="" hover-class="navigator-hover" style="color: skyblue;text-decoration: underline;">
 					忘记密码
 				</navigator>
 			</view>
-			<view @click="toweb" style="display: inline-block; width: 160rpx;">
+			<view @click="Register_fun()" style="display: inline-block; width: 160rpx;">
 				<navigator url="" hover-class="navigator-hover" style="color: skyblue;text-decoration: underline;">
 					立即注册
 				</navigator>
@@ -54,22 +54,157 @@
 		<view style="margin-top: 40px; margin-left: 110px;">
 			<u-button type="success" :plain="true" text="使用微信一键登录"  shape="circle" @click="wx_login()"> </u-button>
 		</view>
+		
+		
+		
+		
+		<u-popup :show="register" mode="center" border-radius="14" width="1000rpx" height="6000px" >
+			<view style="margin: 50px;">
+					<!-- Card start -->
+					<uni-card>
+						<uni-title type="h1" align="center" title="填写个人信息"></uni-title>
+							<u-form :model="registerForm" ref="uForm">
+									<u-form-item label="姓名">
+											<u-input v-model="registerForm.name" type="text" placeholder="您的昵称" />
+									</u-form-item>
+									<u-form-item label="邮箱">
+											<u-input v-model="registerForm.email" type="text" placeholder="您的昵称" />
+									</u-form-item>
+									<u-form-item label="电话">
+											<u-input v-model="registerForm.number" type="text" placeholder="您的电话" />
+									</u-form-item>
+									<u-form-item label="密码">
+											<u-input v-model="registerForm.password" type="password" placeholder="您的密码" />
+									</u-form-item>
+									<u-form-item label="确认密码">
+											<u-input v-model="registerForm.password1" type="password" placeholder="确认密码" />
+									</u-form-item>
+								</u-form>
+						<view slot="actions" class="card-actions">
+							<view class="card-actions-item2">
+								<button style="width: 50%;" type="primary" size="mini" @click="submitRegister()">提交</button>
+								<button style="width: 50%;" type="primary" size="mini" @click="closeRegister()">关闭</button>
+							</view>
+						</view>
+					</uni-card>
+			</view>
+		</u-popup>
+		
+		
+		<u-popup :show="resetp" mode="center" border-radius="14" width="1000rpx" height="6000px" >
+			<view style="margin: 50px;">
+					<!-- Card start -->
+					<uni-card>
+						<uni-title type="h1" align="center" title="填写个人信息"></uni-title>
+							<u-form :model="registerForm" ref="uForm">
+									<u-form-item label="邮箱">
+											<u-input v-model="registerForm.email" type="text" placeholder="请输入您的注册用邮箱" />
+									</u-form-item>
+									<u-form-item label="电话">
+											<u-input v-model="registerForm.number" type="text" placeholder="输入您的您的电话确认身份" />
+									</u-form-item>
+									<u-form-item label="密码">
+											<u-input v-model="registerForm.password" type="password" placeholder="您的新密码" />
+									</u-form-item>
+									<u-form-item label="确认密码">
+											<u-input v-model="registerForm.password1" type="password" placeholder="确认密码" />
+									</u-form-item>
+								</u-form>
+						<view slot="actions" class="card-actions">
+							<view class="card-actions-item2">
+								<button style="width: 50%;" type="primary" size="mini" @click="submitReset()">提交</button>
+								&nbsp;
+								<button style="width: 50%;" type="primary" size="mini" @click="closeReset()">关闭</button>
+							</view>
+						</view>
+					</uni-card>
+			</view>
+		</u-popup>
+		
+		<view>
+			<u-toast ref="uToast" />
+		</view>
+		
+		
+	
+		
+		
 	</view>
+	
+	
 	
 </template>
 <script>
 	export default {
 		data() {
 			return {
+				paswdshow: false,
+				register: false,
+				resetp: false,
+				registerForm:{},
+				resetForm:{},
 				userInfo:{},
-				title: 'Hello'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			closeRegister(){
+				this.register=false;
+			},
+			closeReset(){
+				this.resetp=false;
+			},
+			resetPasswd(){
+				this.resetp=true;
+			},
+			Register_fun(){
+				console.log(this.register)
+				this.register=true;
+				console.log(this.register)
+			},
+			submitRegister(){
+				var that=this;
+				if(that.registerForm.password == that.registerForm.password1){
+					console.log("进来发出请求了")
+					uni.request({
+						header: {'Authorization':getApp().globalData.token,
+						   'content-type':'application/x-www-form-urlencoded'},
+						url: getApp().globalData.urlRoot+"user/register",
+						data:{
+							"name": that.registerForm.name,
+							"email": that.registerForm.email,
+							"number": that.registerForm.number,
+							"password": that.registerForm.password,
+						},
+						method:"POST",
+						success: (res) => {
+							console.log(res.suc)
+							console.log(res.message)
+							if(res.suc){
+								that.register = false
+								that.userInfo.account = that.registerForm.email;
+								that.userInfo.password = that.registerForm.password;
+								console.log(that.userInfo.account)
+								console.log(that.userInfo.password)
+							}else{
+								console.log(res.message);
+							}
+						},
+						fail(){
+							console.log("注册失败");
+						}
+					})
+				}else{
+					console.log("两次密码输入不一致");
+					this.$refs.uToast.show({
+							title: '两次密码不一致',
+							type: 'error',
+							position: 'center',
+					})
+				}
+			},
 		}
 	}
 </script>

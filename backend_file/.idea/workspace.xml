@@ -58,7 +58,7 @@
       <recent name="D:\Desktop\graduation_project\rubbish_recognition\backend_file\cnn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_model1eh">
+  <component name="RunManager" selected="Flask 服务器.Flask (app.py)">
     <configuration name="cnn_model1eh" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="backend_file" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,6 +73,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn/cnn_model1eh.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sql_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend_file" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,6 +125,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="backend_file" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="backend_file" type="Python.FlaskServer">
       <module name="backend_file" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -120,6 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask 服务器.Flask (app.py)" />
+        <item itemvalue="Python.sql_model" />
         <item itemvalue="Python.test_model1eh" />
         <item itemvalue="Python.cnn_model1eh" />
       </list>
@@ -139,6 +178,8 @@
       <workItem from="1674892483070" duration="8084000" />
       <workItem from="1674911869072" duration="254000" />
       <workItem from="1674913971353" duration="2426000" />
+      <workItem from="1675044831248" duration="13954000" />
+      <workItem from="1675080876668" duration="2856000" />
     </task>
     <servers />
   </component>
@@ -147,6 +188,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/backend_file$test_model1eh.coverage" NAME="test_model1eh 覆盖结果" MODIFIED="1674898177073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/use_model" />
+    <SUITE FILE_PATH="coverage/backend_file$sql_model.coverage" NAME="sql_model 覆盖结果" MODIFIED="1675080910350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$cnn_model1eh.coverage" NAME="cnn_model1eh 覆盖结果" MODIFIED="1674897732017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
+    <SUITE FILE_PATH="coverage/backend_file$Flask__app_py_.coverage" NAME="Flask (app.py) 覆盖结果" MODIFIED="1675083690847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
