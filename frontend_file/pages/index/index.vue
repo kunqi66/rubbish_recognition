@@ -134,6 +134,7 @@
 	
 	
 </template>
+
 <script>
 	export default {
 		data() {
@@ -177,20 +178,17 @@
 							"email": that.registerForm.email,
 							"number": that.registerForm.number,
 							"password": that.registerForm.password,
-						},
+						},       //json
 						method:"POST",
 						success: (res) => {
 							console.log(res.suc)
 							console.log(res.message)
-							if(res.suc){
-								that.register = false
-								that.userInfo.account = that.registerForm.email;
-								that.userInfo.password = that.registerForm.password;
-								console.log(that.userInfo.account)
-								console.log(that.userInfo.password)
-							}else{
-								console.log(res.message);
-							}
+							that.register = false
+							that.userInfo.account = that.registerForm.email;
+							that.userInfo.password = that.registerForm.password;
+							that.login();
+							console.log(that.userInfo.account)
+							console.log(that.userInfo.password)
 						},
 						fail(){
 							console.log("注册失败");

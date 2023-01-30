@@ -327,6 +327,7 @@ exports.default = void 0;
 //
 //
 //
+//
 var _default = {
   data: function data() {
     return {
@@ -370,19 +371,17 @@ var _default = {
             "number": that.registerForm.number,
             "password": that.registerForm.password
           },
+          //json
           method: "POST",
           success: function success(res) {
             console.log(res.suc);
             console.log(res.message);
-            if (res.suc) {
-              that.register = false;
-              that.userInfo.account = that.registerForm.email;
-              that.userInfo.password = that.registerForm.password;
-              console.log(that.userInfo.account);
-              console.log(that.userInfo.password);
-            } else {
-              console.log(res.message);
-            }
+            that.register = false;
+            that.userInfo.account = that.registerForm.email;
+            that.userInfo.password = that.registerForm.password;
+            that.login();
+            console.log(that.userInfo.account);
+            console.log(that.userInfo.password);
           },
           fail: function fail() {
             console.log("注册失败");
