@@ -1,7 +1,7 @@
 from user.init import user_bp
 from flask import request,jsonify
 from sql_model import sess,User
-
+import json
 
 
 @user_bp.route('/')
@@ -21,10 +21,12 @@ def register():
         password = data.get("password")
         user_demo = User(name=name, email=email, phone_number=number, password=password)
         sess.add(user_demo)
-        sess.commit()
-        json_dict = {
+        try:
+            sess.commit()
+        except:
+            sess.rollback()
+        return json.dumps({
             "suc": True,
             "message": "注册成功",
-        }
-        return jsonify(json_dict)
+        })
     return "没有请求格式"

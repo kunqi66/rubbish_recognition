@@ -41,8 +41,8 @@ class Manager(Base):
     __tablename__ = 'Manager'
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(32), nullable=False)
-    phone_number = Column(String(32), unique=True, nullable=False)
-    email = Column(String(32), unique=True, nullable=False)
+    phone_number = Column(String(32), nullable=False)
+    email = Column(String(32), nullable=False)
     password = Column(String(256), nullable=False)
     face_url = Column(String(64),unique=True,nullable=True)
 
