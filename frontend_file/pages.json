@@ -15,7 +15,16 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/Manager/Login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理员认证",
+                "enablePullDownRefresh": true
             }
             
         }

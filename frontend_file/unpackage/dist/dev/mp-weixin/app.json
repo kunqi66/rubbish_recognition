@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/Entity/Register"
+    "pages/Entity/Register",
+    "pages/Manager/Login"
   ],
   "subPackages": [],
   "window": {

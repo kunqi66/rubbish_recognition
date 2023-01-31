@@ -55,6 +55,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\graduation_project\rubbish_recognition\backend_file\manager" />
       <recent name="D:\Desktop\graduation_project\rubbish_recognition\backend_file\cnn" />
     </key>
   </component>
@@ -132,7 +133,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -182,6 +183,7 @@
       <workItem from="1675080876668" duration="5103000" />
       <workItem from="1675087330161" duration="1046000" />
       <workItem from="1675136884931" duration="2493000" />
+      <workItem from="1675144907806" duration="2389000" />
     </task>
     <servers />
   </component>
@@ -192,6 +194,6 @@
     <SUITE FILE_PATH="coverage/backend_file$test_model1eh.coverage" NAME="test_model1eh 覆盖结果" MODIFIED="1674898177073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/use_model" />
     <SUITE FILE_PATH="coverage/backend_file$sql_model.coverage" NAME="sql_model 覆盖结果" MODIFIED="1675137706643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$cnn_model1eh.coverage" NAME="cnn_model1eh 覆盖结果" MODIFIED="1674897732017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
-    <SUITE FILE_PATH="coverage/backend_file$Flask__app_py_.coverage" NAME="Flask (app.py) 覆盖结果" MODIFIED="1675137962674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/backend_file$Flask__app_py_.coverage" NAME="Flask (app.py) 覆盖结果" MODIFIED="1675150933141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -50,6 +50,11 @@
 					立即注册
 				</navigator>
 			</view>
+			<view @click="toManager()" style="display: inline-block; width: 160rpx;">
+				<navigator url="" hover-class="navigator-hover" style="color: skyblue;text-decoration: underline;">
+					管理员登录
+				</navigator>
+			</view>
 		</view>
 		<view style="margin-top: 40px; margin-left: 110px;">
 			<u-button type="success" :plain="true" text="使用微信一键登录"  shape="circle" @click="wx_login()"> </u-button>
@@ -121,16 +126,11 @@
 			</view>
 		</u-popup>
 		
-		<view>
 			<u-toast ref="uToast" />
-		</view>
-		
-		
 	
 		
 		
 	</view>
-	
 	
 	
 </template>
@@ -152,6 +152,18 @@
 
 		},
 		methods: {
+			toManager(){
+				uni.navigateTo({
+					url:"/pages/Manager/Login"
+				})
+			},
+			showToast() {
+				this.$refs.uToast.show({
+				title: '登录成功',
+				type: 'success',
+				url: '/pages/user/index'
+							})
+			},
 			closeRegister(){
 				this.register=false;
 			},
@@ -182,17 +194,14 @@
 						},       //json
 						method:"POST",
 						success: (res) => {
+							that.showToast()
 							console.log(res)
 							console.log(res.data.message)
 							if(res.data.suc){
-								console.log(res.suc)
-								console.log(res.message)
 								that.register = false
 								that.userInfo.account = that.registerForm.email;
 								that.userInfo.password = that.registerForm.password;
 								that.login();
-								console.log(that.userInfo.account)
-								console.log(that.userInfo.password)
 							}else{
 								console.log(res.data.message)
 							}
