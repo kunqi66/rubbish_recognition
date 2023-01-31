@@ -25,6 +25,6 @@ def Login():
             print("未查询到数据")
             return json.dumps({
                 "suc": False,
-                "message": "邮箱未注册",
+                "message": "邮箱未被赋予管理员权限",
             })
 

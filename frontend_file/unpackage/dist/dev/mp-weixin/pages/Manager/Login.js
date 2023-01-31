@@ -237,14 +237,26 @@ var _default = {
         success: function success(res) {
           if (res.data.suc) {
             console.log(res.data.message);
+            uni.showToast({
+              title: res.data.message,
+              icon: 'none'
+            });
             uni.navigateTo({
               url: "/pages/Manager/index"
             });
           } else {
             console.log(res.data.message);
+            uni.showToast({
+              title: res.data.message,
+              icon: 'none'
+            });
           }
         },
         fail: function fail() {
+          uni.showToast({
+            title: String("请求失败"),
+            icon: 'none'
+          });
           console.log("登陆失败");
         }
       });

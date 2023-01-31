@@ -28,6 +28,16 @@
             }
             
         }
+		,{
+		    "path" : "pages/Manager/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "管理员界面",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -14,7 +14,7 @@
 									placeholder="请输入邮箱"
 									prefixIcon="account"
 									v-model="userInfo.account"
-									prefixIconStyle="font-size: 20px;color: #909399"
+									prefixIconStyle="font-size: 20px;color: #000000"
 								></u--input>
 							</u-form-item>
 							<u-form-item
@@ -24,7 +24,7 @@
 									prefixIcon="eye"
 									type="password"
 									v-model="userInfo.password"
-									prefixIconStyle="font-size: 20px;color: #909399"
+									prefixIconStyle="font-size: 20px;color: #000000"
 								></u--input>
 							</u-form-item>
 					</u--form>
@@ -60,14 +60,26 @@
 					success: (res) => {
 						if(res.data.suc){
 							console.log(res.data.message)
+							uni.showToast({
+								title: res.data.message,
+								icon: 'none'
+							})
 							uni.navigateTo({
 								url:"/pages/Manager/index"
 							})
 						}else{
 							console.log(res.data.message)
+							uni.showToast({
+								title: res.data.message,
+								icon: 'none'
+							})
 						}
 					},
 					fail() {
+						uni.showToast({
+							title: String("请求失败"),
+							icon: 'none'
+						})
 						console.log("登陆失败")
 					},
 					
