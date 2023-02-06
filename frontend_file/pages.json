@@ -4,9 +4,9 @@
 		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/user/index/index",
 			"style": {
-				"navigationBarTitleText": "垃圾种类识别系统",
+				"navigationBarTitleText": "欢迎来到小程序",
 				"enablePullDownRefresh": true
 			}
 		}
@@ -38,6 +38,87 @@
 		    
 		}
 		
+        ,{
+            "path" : "pages/index/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "垃圾分类小程序",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/person/person",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+		,{
+		    "path" : "pages/user/introduce/introduce",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "分类介绍",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/news/news",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "相关新闻",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/user/questions/questions",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "答题",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Manager/mana-main/addManager",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "添加管理员",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Manager/mana-main/editManager",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "编辑管理员",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Manager/resource-main/createNews",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "新建新闻",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Manager/resource-main/editNews",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "编辑新闻",
+		        "enablePullDownRefresh": true
+		    }
+		    
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -45,5 +126,43 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#999794",
+		"selectedColor": "#33312e",
+		"borderStyle": "white",
+		"backgroundColor": "#fafafa",
+		"list":[
+			{
+				"pagePath":"pages/user/index/index",
+				"iconPath": "static/log/home.jpg",
+				"selectedIconPath": "static/log/home1.jpg",
+				"text":"首页"
+			},
+			{
+				"pagePath": "pages/user/introduce/introduce",
+				"iconPath": "static/log/introduce.jpg",
+				"selectedIconPath": "static/log/introduce1.jpg",
+				"text":"分类介绍"
+			},
+			{
+				"pagePath": "pages/user/news/news",
+				"iconPath": "static/log/news.jpg",
+				"selectedIconPath": "static/log/news1.jpg",
+				"text":"相关新闻"
+			},
+			{
+				"pagePath": "pages/user/questions/questions",
+				"iconPath": "static/log/question.jpg",
+				"selectedIconPath": "static/log/question1.jpg",
+				"text":"答题"
+			},
+			{
+				"pagePath": "pages/user/person/person",
+				"iconPath": "static/log/person.jpg",
+				"selectedIconPath": "static/log/person1.jpg",
+				"text":"个人中心"
+			}
+		]
+	}
 }

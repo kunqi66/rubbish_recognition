@@ -25,7 +25,7 @@
 /* 透明度 */
 /* 文章场景相关 */
 page {
-  background-color: bisque;
+  background-color: #eef7fe;
 }
 .text-home {
   padding-top: 100px;

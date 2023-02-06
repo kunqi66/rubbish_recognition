@@ -1,9 +1,18 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/user/index/index",
     "pages/Entity/Register",
     "pages/Manager/Login",
-    "pages/Manager/index"
+    "pages/Manager/index",
+    "pages/index/index",
+    "pages/user/person/person",
+    "pages/user/introduce/introduce",
+    "pages/user/news/news",
+    "pages/user/questions/questions",
+    "pages/Manager/mana-main/addManager",
+    "pages/Manager/mana-main/editManager",
+    "pages/Manager/resource-main/createNews",
+    "pages/Manager/resource-main/editNews"
   ],
   "subPackages": [],
   "window": {
@@ -11,6 +20,44 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999794",
+    "selectedColor": "#33312e",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/user/index/index",
+        "iconPath": "static/log/home.jpg",
+        "selectedIconPath": "static/log/home1.jpg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/introduce/introduce",
+        "iconPath": "static/log/introduce.jpg",
+        "selectedIconPath": "static/log/introduce1.jpg",
+        "text": "分类介绍"
+      },
+      {
+        "pagePath": "pages/user/news/news",
+        "iconPath": "static/log/news.jpg",
+        "selectedIconPath": "static/log/news1.jpg",
+        "text": "相关新闻"
+      },
+      {
+        "pagePath": "pages/user/questions/questions",
+        "iconPath": "static/log/question.jpg",
+        "selectedIconPath": "static/log/question1.jpg",
+        "text": "答题"
+      },
+      {
+        "pagePath": "pages/user/person/person",
+        "iconPath": "static/log/person.jpg",
+        "selectedIconPath": "static/log/person1.jpg",
+        "text": "个人中心"
+      }
+    ]
   },
   "permission": {},
   "usingComponents": {}

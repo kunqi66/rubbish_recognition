@@ -1,16 +1,9 @@
 {
-  "navigationBarTitleText": "垃圾种类识别系统",
+  "navigationBarTitleText": "垃圾分类小程序",
   "enablePullDownRefresh": true,
   "usingComponents": {
     "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
     "u-loading-icon": "/uni_modules/uview-ui/components/u-loading-icon/u-loading-icon",
-    "u--form": "/uni_modules/uview-ui/components/u--form/u--form",
-    "u-form-item": "/uni_modules/uview-ui/components/u-form-item/u-form-item",
-    "u--input": "/uni_modules/uview-ui/components/u--input/u--input",
-    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
-    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup",
-    "u-form": "/uni_modules/uview-ui/components/u-form/u-form",
-    "u-input": "/uni_modules/uview-ui/components/u-input/u-input",
-    "u-toast": "/uni_modules/uview-ui/components/u-toast/u-toast"
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
   }
 }

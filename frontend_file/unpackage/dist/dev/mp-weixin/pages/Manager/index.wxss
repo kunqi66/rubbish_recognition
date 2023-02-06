@@ -1,0 +1,9 @@
+
+.card-home{
+	margin-top: 40px;
+}
+.item_button{
+	width: 100%;
+	height: 15px;
+}
+

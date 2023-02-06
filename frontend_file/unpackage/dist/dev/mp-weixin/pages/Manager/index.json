@@ -1,5 +1,9 @@
 {
   "navigationBarTitleText": "管理员界面",
   "enablePullDownRefresh": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list",
+    "uni-list-item": "/uni_modules/uni-list/components/uni-list-item/uni-list-item"
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "欢迎来到小程序",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "search": "/pages/user/index/components/search",
+    "context": "/pages/user/index/components/context",
+    "title": "/pages/user/index/components/title"
+  }
+}

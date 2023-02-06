@@ -30,10 +30,6 @@ class Host(Base):
 class User(Base):
     __tablename__ = 'User'   # 表名
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(32),nullable=False)
-    phone_number = Column(String(32),unique=True,nullable=False)
-    email = Column(String(32),unique=True,nullable=False)
-    password = Column(String(256),nullable=False)
     wx_token = Column(String(256),nullable=True)
 
 

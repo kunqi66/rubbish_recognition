@@ -60,9 +60,10 @@
 					success: (res) => {
 						if(res.data.suc){
 							console.log(res.data.message)
+							getApp().globalData.token = res.data.token
 							uni.showToast({
-								title: res.data.message,
-								icon: 'none'
+								title: "登录成功！",
+								icon: 'checkmarkempty'
 							})
 							uni.navigateTo({
 								url:"/pages/Manager/index"
@@ -70,15 +71,15 @@
 						}else{
 							console.log(res.data.message)
 							uni.showToast({
-								title: res.data.message,
-								icon: 'none'
+								title: String(res.data.message),
+								icon: 'closeempty'
 							})
 						}
 					},
 					fail() {
 						uni.showToast({
-							title: String("请求失败"),
-							icon: 'none'
+							title: "登录失败！",
+							icon: 'closeempty'
 						})
 						console.log("登陆失败")
 					},
@@ -90,7 +91,7 @@
 </script>
 <style lang="scss">
 	page{
-		background-color: bisque;
+		background-color: #eef7fe;
 	}
 	.text-home{
 		padding-top: 100px;
