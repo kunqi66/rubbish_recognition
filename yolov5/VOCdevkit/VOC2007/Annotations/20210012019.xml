@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>鱼骨</folder>
+	<filename>20210012019.jpg</filename>
+	<path>D:\trash_dataset\20210012019.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>331</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>鱼骨</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>49</xmin>
+			<ymin>68</ymin>
+			<xmax>556</xmax>
+			<ymax>262</ymax>
+		</bndbox>
+	</object>
+</annotation>

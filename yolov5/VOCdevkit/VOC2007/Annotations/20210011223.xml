@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>一次性快餐盒-孙双艳</folder>
+  <filename>20210011223.jpg</filename>
+  <path>D:\trash_dataset\20210011223.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>429</width>
+    <height>369</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>一次性快餐盒</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>2</xmin>
+        <ymin>122</ymin>
+        <xmax>428</xmax>
+        <ymax>336</ymax>
+      </bndbox>
+    </object>
+  </annotation>

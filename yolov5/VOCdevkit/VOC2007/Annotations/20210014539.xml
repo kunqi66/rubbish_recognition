@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>塑料衣架</folder>
+	<filename>20210014539.jpg</filename>
+	<path>D:\trash_dataset\20210014539.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>塑料衣架</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>18</xmin>
+			<ymin>135</ymin>
+			<xmax>585</xmax>
+			<ymax>374</ymax>
+		</bndbox>
+	</object>
+</annotation>

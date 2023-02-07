@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>陶瓷器皿</folder>
+	<filename>20210003494.jpg</filename>
+	<path>D:\trash_dataset\20210003494.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>230</width>
+		<height>281</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>陶瓷器皿</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>11</xmin>
+			<ymin>64</ymin>
+			<xmax>196</xmax>
+			<ymax>246</ymax>
+		</bndbox>
+	</object>
+</annotation>

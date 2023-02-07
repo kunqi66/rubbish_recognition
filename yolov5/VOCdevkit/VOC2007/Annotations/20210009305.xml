@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>大骨头</folder>
+  <filename>20210009305.jpg</filename>
+  <path>D:\trash_dataset\20210009305.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>459</width>
+    <height>298</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>剩饭剩菜</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>33</xmin>
+        <ymin>29</ymin>
+        <xmax>454</xmax>
+        <ymax>280</ymax>
+      </bndbox>
+    </object>
+  </annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>花盆</folder>
+	<filename>20210003416.jpg</filename>
+	<path>D:\trash_dataset\20210003416.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>759</width>
+		<height>737</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>花盆</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>72</xmin>
+			<ymin>100</ymin>
+			<xmax>687</xmax>
+			<ymax>715</ymax>
+		</bndbox>
+	</object>
+</annotation>

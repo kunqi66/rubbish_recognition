@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>洗护用品-孙双艳</folder>
+  <filename>20210003041.jpg</filename>
+  <path>D:\trash_dataset\20210003041.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>577</width>
+    <height>1024</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>洗护用品</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>133</xmin>
+        <ymin>305</ymin>
+        <xmax>385</xmax>
+        <ymax>784</ymax>
+      </bndbox>
+    </object>
+  </annotation>

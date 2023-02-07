@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>果皮果肉-18</folder>
+  <filename>20210000339.jpg</filename>
+  <path>D:\trash_dataset\20210000339.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1536</width>
+    <height>2048</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>果皮果肉</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>228</xmin>
+        <ymin>761</ymin>
+        <xmax>1128</xmax>
+        <ymax>1638</ymax>
+      </bndbox>
+    </object>
+  </annotation>

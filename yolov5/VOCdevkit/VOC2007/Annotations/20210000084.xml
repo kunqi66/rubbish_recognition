@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>label</folder>
+	<filename>20210000084.jpg</filename>
+	<path>D:\trash_dataset\20210000084.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3024</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>书籍纸张</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>187</xmin>
+			<ymin>272</ymin>
+			<xmax>2783</xmax>
+			<ymax>3711</ymax>
+		</bndbox>
+	</object>
+</annotation>

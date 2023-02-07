@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>易拉罐-8</folder>
+  <filename>20210000205.jpg</filename>
+  <path>D:\trash_dataset\20210000205.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>2048</width>
+    <height>946</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>易拉罐</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>633</xmin>
+        <ymin>59</ymin>
+        <xmax>1000</xmax>
+        <ymax>801</ymax>
+      </bndbox>
+    </object>
+  </annotation>

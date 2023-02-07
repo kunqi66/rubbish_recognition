@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>易拉罐-孙双艳</folder>
+  <filename>20210001733.jpg</filename>
+  <path>D:\trash_dataset\20210001733.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>473</width>
+    <height>293</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>易拉罐</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>198</xmin>
+        <ymin>27</ymin>
+        <xmax>360</xmax>
+        <ymax>292</ymax>
+      </bndbox>
+    </object>
+  </annotation>

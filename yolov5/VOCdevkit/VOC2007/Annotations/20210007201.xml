@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>干电池</folder>
+	<filename>20210007201.jpg</filename>
+	<path>D:\trash_dataset\20210007201.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>234</width>
+		<height>394</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>干电池</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>74</xmin>
+			<ymin>32</ymin>
+			<xmax>178</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+</annotation>

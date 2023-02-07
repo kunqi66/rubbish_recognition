@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>锅-油桶-孙双艳</folder>
+  <filename>20210006381.jpg</filename>
+  <path>D:\trash_dataset\20210006381.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>630</width>
+    <height>456</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>锅</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>169</xmin>
+        <ymin>63</ymin>
+        <xmax>596</xmax>
+        <ymax>455</ymax>
+      </bndbox>
+    </object>
+  </annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>洗护用品</folder>
+	<filename>20210003043.jpg</filename>
+	<path>D:\trash_dataset\20210003043.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>577</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>洗护用品</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>137</xmin>
+			<ymin>109</ymin>
+			<xmax>432</xmax>
+			<ymax>677</ymax>
+		</bndbox>
+	</object>
+</annotation>

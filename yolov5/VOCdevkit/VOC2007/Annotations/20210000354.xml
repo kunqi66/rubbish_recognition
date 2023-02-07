@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>污损塑料-54</folder>
+  <filename>20210000354.jpg</filename>
+  <path>D:\trash_dataset\20210000354.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>2048</width>
+    <height>1536</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>污损塑料</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>169</xmin>
+        <ymin>99</ymin>
+        <xmax>2047</xmax>
+        <ymax>1534</ymax>
+      </bndbox>
+    </object>
+  </annotation>

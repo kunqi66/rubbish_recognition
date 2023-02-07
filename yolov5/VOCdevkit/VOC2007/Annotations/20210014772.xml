@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>快递纸袋</folder>
+	<filename>20210014772.jpg</filename>
+	<path>D:\trash_dataset\20210014772.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>460</width>
+		<height>355</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>快递纸袋</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>12</xmin>
+			<ymin>8</ymin>
+			<xmax>446</xmax>
+			<ymax>348</ymax>
+		</bndbox>
+	</object>
+</annotation>

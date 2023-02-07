@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>衣架-孙双艳</folder>
+  <filename>20210014523.jpg</filename>
+  <path>D:\trash_dataset\20210014523.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>192</width>
+    <height>192</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>塑料衣架</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>13</xmin>
+        <ymin>32</ymin>
+        <xmax>191</xmax>
+        <ymax>130</ymax>
+      </bndbox>
+    </object>
+  </annotation>

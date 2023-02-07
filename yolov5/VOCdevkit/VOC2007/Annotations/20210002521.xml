@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>牙签</folder>
+	<filename>20210002521.jpg</filename>
+	<path>D:\trash_dataset\20210002521.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>489</width>
+		<height>393</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>牙签</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>23</xmin>
+			<ymin>81</ymin>
+			<xmax>420</xmax>
+			<ymax>313</ymax>
+		</bndbox>
+	</object>
+</annotation>

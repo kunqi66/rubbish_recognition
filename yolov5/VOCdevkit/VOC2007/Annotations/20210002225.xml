@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>毛绒玩具</folder>
+	<filename>20210002225.jpg</filename>
+	<path>D:\trash_dataset\20210002225.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>750</width>
+		<height>563</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>毛绒玩具</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>20</xmin>
+			<ymin>173</ymin>
+			<xmax>687</xmax>
+			<ymax>455</ymax>
+		</bndbox>
+	</object>
+</annotation>

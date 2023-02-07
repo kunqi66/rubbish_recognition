@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>筷子</folder>
+	<filename>20210007493.jpg</filename>
+	<path>D:\trash_dataset\20210007493.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>663</width>
+		<height>533</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>筷子</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>6</ymin>
+			<xmax>653</xmax>
+			<ymax>476</ymax>
+		</bndbox>
+	</object>
+</annotation>

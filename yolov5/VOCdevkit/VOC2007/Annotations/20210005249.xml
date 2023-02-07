@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>食用油桶</folder>
+	<filename>20210005249.jpg</filename>
+	<path>D:\trash_dataset\20210005249.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>393</width>
+		<height>566</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>食用油桶</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>93</xmin>
+			<ymin>8</ymin>
+			<xmax>323</xmax>
+			<ymax>560</ymax>
+		</bndbox>
+	</object>
+</annotation>

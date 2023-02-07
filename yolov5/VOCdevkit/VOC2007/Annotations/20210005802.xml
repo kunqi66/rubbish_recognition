@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>金属食品罐-50</folder>
+	<filename>20210005802.jpg</filename>
+	<path>D:\trash_dataset\20210005802.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>413</width>
+		<height>308</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>金属食品罐</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>55</xmin>
+			<ymin>28</ymin>
+			<xmax>371</xmax>
+			<ymax>305</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>调料瓶1-孙双艳</folder>
+  <filename>20210005257.jpg</filename>
+  <path>D:\trash_dataset\20210005257.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>617</width>
+    <height>347</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>调料瓶</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>141</xmin>
+        <ymin>27</ymin>
+        <xmax>469</xmax>
+        <ymax>346</ymax>
+      </bndbox>
+    </object>
+  </annotation>

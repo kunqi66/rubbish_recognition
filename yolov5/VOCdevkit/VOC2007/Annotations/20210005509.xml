@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>酒瓶-52</folder>
+	<filename>20210005509.jpg</filename>
+	<path>D:\trash_dataset\20210005509.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>389</width>
+		<height>975</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>酒瓶</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>71</xmin>
+			<ymin>2</ymin>
+			<xmax>374</xmax>
+			<ymax>905</ymax>
+		</bndbox>
+	</object>
+</annotation>

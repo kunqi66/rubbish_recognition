@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>蛋壳</folder>
+  <filename>20210011662.jpg</filename>
+  <path>D:\trash_dataset\20210011662.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>696</width>
+    <height>486</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>蛋壳</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>34</xmin>
+        <ymin>24</ymin>
+        <xmax>679</xmax>
+        <ymax>467</ymax>
+      </bndbox>
+    </object>
+  </annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>鞋</folder>
+	<filename>20210004109.jpg</filename>
+	<path>D:\trash_dataset\20210004109.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>496</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>鞋</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>52</xmin>
+			<ymin>1</ymin>
+			<xmax>442</xmax>
+			<ymax>274</ymax>
+		</bndbox>
+	</object>
+</annotation>

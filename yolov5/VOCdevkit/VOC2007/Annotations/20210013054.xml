@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>包</folder>
+	<filename>20210013054.jpg</filename>
+	<path>D:\trash_dataset\20210013054.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>402</width>
+		<height>507</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>包</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>11</xmin>
+			<ymin>40</ymin>
+			<xmax>402</xmax>
+			<ymax>411</ymax>
+		</bndbox>
+	</object>
+</annotation>

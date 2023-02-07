@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>13</folder>
+  <filename>20210000990.jpg</filename>
+  <path>D:\trash_dataset\20210000990.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>309</width>
+    <height>388</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>插头电线</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>79</xmin>
+        <ymin>88</ymin>
+        <xmax>170</xmax>
+        <ymax>186</ymax>
+      </bndbox>
+    </object>
+  </annotation>

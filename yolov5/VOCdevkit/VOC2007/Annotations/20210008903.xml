@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>剩饭剩菜</folder>
+	<filename>20210008903.jpg</filename>
+	<path>D:\trash_dataset\20210008903.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>707</width>
+		<height>646</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>剩饭剩菜</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>147</xmin>
+			<ymin>184</ymin>
+			<xmax>569</xmax>
+			<ymax>592</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>陶瓷器皿</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>95</xmin>
+			<ymin>131</ymin>
+			<xmax>632</xmax>
+			<ymax>629</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>软膏-孙双艳</folder>
+  <filename>20210007798.jpg</filename>
+  <path>D:\trash_dataset\20210007798.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>371</width>
+    <height>299</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>软膏</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>91</xmin>
+        <ymin>51</ymin>
+        <xmax>312</xmax>
+        <ymax>159</ymax>
+      </bndbox>
+    </object>
+  </annotation>

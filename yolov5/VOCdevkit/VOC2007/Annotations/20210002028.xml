@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>14</folder>
+  <filename>20210002028.jpg</filename>
+  <path>D:\trash_dataset\20210002028.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>576</width>
+    <height>1023</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>枕头</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>28</xmin>
+        <ymin>117</ymin>
+        <xmax>461</xmax>
+        <ymax>1022</ymax>
+      </bndbox>
+    </object>
+  </annotation>

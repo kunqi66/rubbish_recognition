@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+  <folder>砧板-孙双艳</folder>
+  <filename>20210004174.jpg</filename>
+  <path>D:\trash_dataset\20210004174.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>577</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+      <name>砧板</name>
+      <pose>Unspecified</pose>
+      <truncated>1</truncated>
+      <difficult>0</difficult>
+      <bndbox>
+        <xmin>100</xmin>
+        <ymin>20</ymin>
+        <xmax>969</xmax>
+        <ymax>507</ymax>
+      </bndbox>
+    </object>
+  </annotation>

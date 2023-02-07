@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>旧衣服</folder>
+	<filename>20210001099.jpg</filename>
+	<path>D:\trash_dataset\20210001099.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>526</width>
+		<height>393</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>旧衣服</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>39</ymin>
+			<xmax>506</xmax>
+			<ymax>367</ymax>
+		</bndbox>
+	</object>
+</annotation>
