@@ -16,7 +16,7 @@ app.register_blueprint(manager_bp,url_prefix="/manager")
 # camera = cv2.VideoCapture('rtsp://admin:admin@172.21.182.12:554/cam/realmonitor?channel=1&subtype=1')
 # camera = cv2.VideoCapture('test.mp4')
 # 0代表的是第一个本地摄像头，如果有多个的话，依次类推
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture('rtsp://admin:admin@192.168.0.101:8081')
 
 def gen_frames():
     while True:
@@ -26,6 +26,7 @@ def gen_frames():
             break
         else:
             # 将每一帧的数据进行编码压缩，存放在memory中
+
             ret, buffer = cv2.imencode('.jpg', frame)
             frame = buffer.tobytes()
             # 使用yield语句，将帧数据作为响应体返回，content-type为image/jpeg

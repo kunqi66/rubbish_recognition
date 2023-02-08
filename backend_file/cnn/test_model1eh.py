@@ -71,7 +71,7 @@ def data_load(data_dir, img_height, img_width, batch_size):
 
 
 def test_cnn():
-    train_ds, val_ds, class_names = data_load("D:\\Desktop\\graduation_project\\数据集\\垃圾分类数据集和tf代码-8w张图片245个类(更新)\\data\\trash_jpg", 224, 224, 4)
+    train_ds, val_ds, class_names = data_load(".\\data\\trash_jpg", 224, 224, 4)
     model = tf.keras.models.load_model("D:\\Desktop\\graduation_project\\rubbish_recognition\\backend_file\\cnn\\models\\cnn_245_epoch1.h5")
     model.summary()
     loss, accuracy = model.evaluate(val_ds)

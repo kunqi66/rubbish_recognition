@@ -1,0 +1,10 @@
+{
+	"source": "http://admin:admin@192.168.0.101:8081",
+	"weights": "runs/train/base/weights/best.pt",
+	"device": "cpu",
+	"imgsz": 640,
+	"stride": 32,
+	"conf_thres": 0.35,
+	"iou_thres": 0.45,
+	"augment": false
+}
