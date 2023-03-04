@@ -1,0 +1,6 @@
+
+.button_home{
+	width: 80%;
+	padding-left: 10%;
+}
+

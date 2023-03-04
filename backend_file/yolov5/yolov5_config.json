@@ -1,5 +1,5 @@
 {
-	"source": "http://admin:admin@192.168.0.101:8081",
+	"source": "http://admin:admin@10.184.35.65:8081",
 	"weights": "runs/train/base/weights/best.pt",
 	"device": "cpu",
 	"imgsz": 640,

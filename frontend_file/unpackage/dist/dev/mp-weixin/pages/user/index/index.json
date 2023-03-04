@@ -2,6 +2,9 @@
   "navigationBarTitleText": "欢迎来到小程序",
   "enablePullDownRefresh": true,
   "usingComponents": {
+    "uni-section": "/uni_modules/uni-section/components/uni-section/uni-section",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
     "search": "/pages/user/index/components/search",
     "context": "/pages/user/index/components/context",
     "title": "/pages/user/index/components/title"

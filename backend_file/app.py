@@ -1,17 +1,21 @@
 import requests
 from flask import Flask, request, Response
 import tensorflow as tf
+
+import settings
 from user.init import user_bp
 from manager.init import manager_bp
-from settings import TOKEN_DIC, UID
+from settings import TOKEN_DIC
 import cv2
+
+
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 app.register_blueprint(user_bp,url_prefix="/user")
 app.register_blueprint(manager_bp,url_prefix="/manager")
 
-
+"""
 # VideoCapture可以读取从url、本地视频文件以及本地摄像头的数据
 # camera = cv2.VideoCapture('rtsp://admin:admin@172.21.182.12:554/cam/realmonitor?channel=1&subtype=1')
 # camera = cv2.VideoCapture('test.mp4')
@@ -38,8 +42,7 @@ def video_start():
     print("进来了")
     # 通过将一帧帧的图像返回，就达到了看视频的目的。multipart/x-mixed-replace是单次的http请求-响应模式，如果网络中断，会导致视频流异常终止，必须重新连接才能恢复
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-
+"""
 @app.route('/')
 def hello_world():  # put application's code here
     return 'Hello World!'
@@ -52,14 +55,16 @@ def token_verify():
     print("前端传来的token为{}".format(token))
     if token != "wutoken":
         if token in TOKEN_DIC.keys():
-            UID = TOKEN_DIC.get(token)
+            if settings.UID:
+                settings.UID[0] = TOKEN_DIC.get(token)
+            else:
+                settings.UID.append(TOKEN_DIC.get(token))
             print("转化后的uid为{}".format(TOKEN_DIC.get(token)))
         else:
             return "验证身份失败"
+
+
 """
-
-
-
 
 
 

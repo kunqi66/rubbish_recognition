@@ -37,7 +37,8 @@ button.data-v-7fb9790e::after {
   color: dimgrey;
 }
 .wrap.data-v-7fb9790e {
-  padding: 10rpx;
+  padding: 3rpx;
+  margin: 0px;
 }
 .swiper.data-v-7fb9790e {
   height: 300rpx;

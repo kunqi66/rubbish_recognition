@@ -3,30 +3,28 @@
 		<view style="height: 150px;">
 			<button style="background-color:#eef7fe; border: none; size:auto;">
 				<view class="image_home">
-					<image class="avatar" src="/static/logo.png" />
+					<image class="avatar" v-if="managerview == -1" src="/static/logo.png" />
+					<image class="avatar" v-if="managerview != -1" src="/static/l.png"></image>
 					<view>
 					<span style="text-align: center;size: 50px;" >
-					<text class="img-text">用户昵称</text>
+					<text v-if="managerview == -1" class="img-text">用户昵称</text>
+					<text v-if="managerview != -1" class="img-text">微信用户</text>
 					</span>
 					</view>
 				</view>
 			</button>
 		</view>
 		
-		<view class="list_home">
-			
+		<view class="list_home">	
 		<uni-list style=" border-radius: 18rpx;">
 			<view style="border-radius: 18rpx;">
 			<uni-list-item title="个人信息" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
 			</view>
 			<view>
-			<uni-list-item title="搜索记录" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
+			<uni-list-item title="修改信息" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
 			</view>
 			<view>
 			<uni-list-item title="个人搜索记录" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
-			</view>
-			<view>
-			<uni-list-item title="个人答题记录" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
 			</view>
 			<view>
 			<uni-list-item title="新闻观看记录" link to="/pages/vue/index/index" @click="onClick($event,1)" ></uni-list-item>
@@ -35,7 +33,8 @@
 		</view>
 		
 		
-		<view style="width: 80%; margin-left: 10%; margin-top: 50px;">
+		
+		<view style="width: 80%; margin-left: 10%; margin-top: 70px;">
 			<u-button  v-if="managerview == -1"  type="primary" @click="wx_login()" >用户一键微信登录</u-button>
 		</view>
 		

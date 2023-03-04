@@ -39,9 +39,22 @@ class Manager(Base):
     name = Column(String(32), nullable=False)
     phone_number = Column(String(32), nullable=False)
     email = Column(String(32), nullable=False)
-    password = Column(String(256), nullable=False)
+    password = Column(String(256))
     face_url = Column(String(64),unique=True,nullable=True)
 
+class News(Base):
+    __tablename__ = 'News'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    title = Column(String(32), nullable=True)
+    text = Column(String(5000),nullable=True)
+    img_url = Column(String(1000))
+
+class Video(Base):
+    __tablename__ = 'Video'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    url = Column(String(1000))
+    title = Column(String(20))
+    img_url = Column(String(1000))
 
 
 if __name__ == '__main__':

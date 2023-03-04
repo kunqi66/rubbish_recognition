@@ -27,4 +27,12 @@
 page {
   background-color: aliceblue;
 }
+.img-text {
+  margin-left: 5%;
+  width: 90%;
+  height: 150px;
+}
+.main {
+  margin: 20rpx;
+}
 

@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "分类介绍",
   "enablePullDownRefresh": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-title": "/uni_modules/uni-title/components/uni-title/uni-title"
+  }
 }

@@ -14,30 +14,7 @@
 			
 			
 			<view class="wrap">
-						<swiper class="swiper" circular :indicator-dots="true" :autoplay="true" :interval="2000"
-							:duration="duration" style="background-color: aliceblue;">
-							<swiper-item>
-								<view class="swiper-item uni-bg-red">
-									<button style="background-color: #eef7fe;">
-										<image src="/static/swiper/swiper1.webp" ></image>
-									</button>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="swiper-item uni-bg-green">
-									<button style="background-color: #eef7fe;">
-										<image src="/static/swiper/swiper2.webp"></image>
-									</button>
-								</view>
-							</swiper-item>
-							<swiper-item>
-								<view class="swiper-item uni-bg-blue">
-									<button style="background-color: #eef7fe;">
-										<image src="/static/swiper/swiper3.webp"></image>
-									</button>
-								</view>
-							</swiper-item>
-						</swiper>
+						<image src="../../../../static/swiper/封面.jpg" style="height: 180px; width: 100%; margin-top: 20px;"></image>
 			</view>
 			
 			
@@ -122,7 +99,8 @@
 	
 	//轮播的css
 	.wrap {
-			padding: 10rpx;
+			padding: 3rpx;
+			margin: 0px;
 		}
 			.swiper {
 				height: 300rpx;

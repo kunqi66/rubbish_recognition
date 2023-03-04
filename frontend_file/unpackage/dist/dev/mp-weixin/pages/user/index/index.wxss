@@ -30,4 +30,9 @@ page {
 .content {
   margin: 0 20rpx;
 }
+.prefer-title {
+  font-size: 35rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
 

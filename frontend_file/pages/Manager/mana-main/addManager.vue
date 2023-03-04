@@ -48,7 +48,34 @@
 			},
 			submit(){
 				var that=this;
-				
+				uni.request({
+					url:getApp().globalData.urlRoot+"manager/creatManager",
+					header: {'Authorization':getApp().globalData.token,
+					   'content-type':'application/x-www-form-urlencoded'},
+					data:{
+						"name": that.formData.name,
+						"email": that.formData.email,
+						"number": that.formData.number,
+						"password": that.formData.password,
+					},       //json
+					method:"POST",
+					success(res) {
+						if(res.data.suc){
+							uni.showToast({
+								title: "添加成功！",
+								icon: 'checkmarkempty'
+							})
+							uni.navigateTo({
+								url: "/pages/Manager/index",
+							})
+						}else{
+							uni.showToast({
+								title: String(res.data.message),
+								icon: 'closeempty',
+							})
+						}
+					}
+				})
 			}
 		}
 	}

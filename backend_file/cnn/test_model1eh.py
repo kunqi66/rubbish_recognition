@@ -117,6 +117,7 @@ def draw_heatmap(folder_name):
     print(len("real:{}".format(len(real_label))))
     print(pre_label)
     print(real_label)
+
     # 先保存为pickle文件
     a_dict = {}
     a_dict["pre_label"] = pre_label

@@ -1,11 +1,12 @@
 import hashlib
 from datetime import datetime
-
+import os
 from manager.init import manager_bp
 from flask import request,jsonify
-from sql_model import sess,Manager
+from sql_model import sess,Manager,News,Video
 import json
-from settings import TOKEN_DIC,UID
+from settings import TOKEN_DIC,UID,cur_path
+
 
 
 class MyEncoder(json.JSONEncoder):
@@ -13,6 +14,7 @@ class MyEncoder(json.JSONEncoder):
         if isinstance(obj, bytes):
             return str(obj, encoding='utf-8');
         return json.JSONEncoder.default(self, obj)
+
 
 
 @manager_bp.route('/Loadmanager',methods=['GET','POST'])
@@ -35,7 +37,7 @@ def Loadmanager():
         else:
             return json.dumps({
                 "suc": False,
-                "messager": "未查询到数据",
+                "message": "未查询到数据",
             })
 
 @manager_bp.route('/editManager',methods=['GET','POST'])
@@ -43,7 +45,21 @@ def edit_ma():
     if request.method == "POST":
         form = request.form
         data = form.to_dict()
-
+        id = data.get("edit_id")
+        res =sess.query(Manager).filter(Manager.id == id).all()
+        if res:
+            res[0].email = data.get("email")
+            res[0].phone_number = data.get("number")
+            res[0].name = data.get("name")
+            return json.dumps({
+                "suc": True,
+                "message": "修改成功",
+            })
+        else:
+            return json.dumps({
+                "suc": False,
+                "message": "未查询到数据",
+            })
 
 
 
@@ -52,7 +68,39 @@ def creat_ma():
     if request.method == "POST":
         form = request.form
         data = form.to_dict()
-
+        name = data.get("name")
+        email = data.get("email")
+        res = sess.query(Manager).filter(Manager.email == email).all()
+        res = list(res)
+        print("这是查找到的{}".format(res))
+        if res:
+            return json.dumps({
+                "suc": False,
+                "message": "邮箱已注册为管理员",
+            })
+        number = data.get("number")
+        res = sess.query(Manager).filter(Manager.phone_number == number).all()
+        res = list(res)
+        if res:
+            return json.dumps({
+                "suc": False,
+                "message": "电话已注册为管理员",
+            })
+        password = data.get("password")
+        if password and number and email and name:
+            user_demo = Manager(name=name, email=email, phone_number=number, password=password)
+            sess.add(user_demo)
+            sess.commit()
+            return json.dumps({
+                "suc": True,
+                "message": "创建成功",
+            })
+        else:
+            return json.dumps({
+                "suc": False,
+                "message": "输入信息不全",
+            })
+    return "没有请求格式"
 
 
 
@@ -60,11 +108,16 @@ def creat_ma():
 @manager_bp.route('/deleteManager',methods=['GET','POST'])
 def delete_ma():                                          # 等写完添加管理员后测试
     if request.method == "POST":
-        if UID == 1:
+        print(UID[0])
+        if UID[0] == 1:
             form = request.form
             data = form.to_dict()
             del_id = data.get("del_id")
             sess.query(Manager).filter(Manager.id == del_id).delete()
+            try:
+                sess.commit()
+            except:
+                sess.rollback()
             return json.dumps({
                 "suc": True,
                 "message": "删除成功",
@@ -101,6 +154,9 @@ def register():
 
 
 def myhash(str):
+    now = datetime.now()
+    str_now = datetime.strftime(now, '%Y-%m-%d %H:%M:%S')
+    str += str_now
     res = hashlib.sha256(str.encode(encoding="utf-8"))
     hash_str = res.hexdigest()
     ans = hash_str[10:30]
@@ -136,5 +192,109 @@ def Login():
             return json.dumps({
                 "suc": False,
                 "message": "邮箱未被赋予管理员权限",
+            })
+
+
+@manager_bp.route('/upImg',methods=['GET','POST'])
+def upImg():
+    if request.method == 'POST':
+        imgData = request.files['img']
+        imgName = myhash(imgData.filename)
+        print(imgName)
+        imgName = imgName+'.jpg'
+        UPLOAD_FOLDER = 'static\\frontend_img\\news_img'
+        file_dir = os.path.join(os.getcwd(), UPLOAD_FOLDER)
+        if not os.path.exists(file_dir):
+            os.makedirs(file_dir)
+        path = os.path.join(file_dir, imgName)
+        imgData.save(path)
+        return path
+
+
+
+@manager_bp.route('/upvideoImg',methods=['GET','POST'])
+def upvideoImg():
+    if request.method == 'POST':
+        imgData = request.files['img']
+        imgName = myhash(imgData.filename)
+        print(imgName)
+        imgName = imgName+'.jpg'
+        UPLOAD_FOLDER = 'static\\frontend_img\\video_img'
+        file_dir = os.path.join(os.getcwd(), UPLOAD_FOLDER)
+        if not os.path.exists(file_dir):
+            os.makedirs(file_dir)
+        path = os.path.join(file_dir, imgName)
+        imgData.save(path)
+        return path
+
+
+@manager_bp.route('/upVideo',methods=['GET','POST'])
+def upVideo():
+    if request.method == 'POST':
+        videoDate = request.files['Video']
+        videoName = myhash(videoDate.filename)
+        print(videoName)
+        videoName = videoName+'.mp4'
+        UPLOAD_FOLDER = 'static\\frontend_img\\video'
+        file_dir = os.path.join(os.getcwd(), UPLOAD_FOLDER)
+        if not os.path.exists(file_dir):
+            os.makedirs(file_dir)
+        path = os.path.join(file_dir, videoName)
+        videoDate.save(path)
+        return path
+
+
+
+
+
+@manager_bp.route('/submitNews',methods=['GET','POST'])
+def submitNews():
+    if request.method == 'POST':
+        print("执行")
+        form = request.form
+        data = form.to_dict()
+        title = data.get("title")
+        text = data.get("text")
+        print("提取")
+        path = data.get("path")
+        message = News(title=title,text=text,img_url=path)
+        sess.add(message)
+        try:
+            sess.commit()
+            print("保存成功")
+            return json.dumps({
+                "suc": True,
+                "message": "上传成功",
+            })
+        except:
+            sess.rollback()
+            return json.dumps({
+                "suc":False,
+                "message":"上传失败",
+            })
+
+
+@manager_bp.route('/submitVideo',methods=['GET','POST'])
+def submitVideo():
+    if request.method == 'POST':
+        form = request.form
+        data = form.to_dict()
+        title = data.get("title")
+        url = data.get("videourl")
+        imgurl = data.get("imgurl")
+        message = Video(title=title, url=url, img_url=imgurl)
+        sess.add(message)
+        try:
+            sess.commit()
+            print("保存成功")
+            return json.dumps({
+                "suc": True,
+                "message": "上传成功",
+            })
+        except:
+            sess.rollback()
+            return json.dumps({
+                "suc": False,
+                "message": "上传失败",
             })
 

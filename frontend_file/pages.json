@@ -75,15 +75,6 @@
 		    
 		}
 		,{
-		    "path" : "pages/user/questions/questions",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "答题",
-		        "enablePullDownRefresh": true
-		    }
-		    
-		}
-		,{
 		    "path" : "pages/Manager/mana-main/addManager",
 		    "style" :                                                                                    
 		    {
@@ -119,6 +110,24 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/Manager/mana-main/editPassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Manager/resource-main/createVideo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -150,12 +159,6 @@
 				"iconPath": "static/log/news.jpg",
 				"selectedIconPath": "static/log/news1.jpg",
 				"text":"相关新闻"
-			},
-			{
-				"pagePath": "pages/user/questions/questions",
-				"iconPath": "static/log/question.jpg",
-				"selectedIconPath": "static/log/question1.jpg",
-				"text":"答题"
 			},
 			{
 				"pagePath": "pages/user/person/person",
