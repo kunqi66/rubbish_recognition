@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<div></div>
 		<view style="height: 150px;">
 			<button style="background-color:#eef7fe; border: none; size:auto;">
 				<view class="image_home">
@@ -32,7 +33,7 @@
 		</uni-list>
 		</view>
 		
-		
+		v-bind v-on v-model
 		
 		<view style="width: 80%; margin-left: 10%; margin-top: 70px;">
 			<u-button  v-if="managerview == -1"  type="primary" @click="wx_login()" >用户一键微信登录</u-button>
@@ -77,11 +78,6 @@
 					</uni-card>
 			</view>
 		</u-popup>
-		
-		
-		
-		
-		
 		
 		
 		

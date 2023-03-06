@@ -65,7 +65,7 @@
       <recent name="D:\Desktop\graduation_project\rubbish_recognition\backend_file\cnn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_model1eh">
+  <component name="RunManager" selected="Flask 服务器.Flask (app.py)">
     <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="backend_file" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,8 +186,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_model1eh" />
         <item itemvalue="Flask 服务器.Flask (app.py)" />
+        <item itemvalue="Python.test_model1eh" />
         <item itemvalue="Python.sql_model" />
         <item itemvalue="Python.settings" />
         <item itemvalue="Python.yolov5" />
@@ -237,6 +237,9 @@
       <workItem from="1677555174119" duration="75000" />
       <workItem from="1677563792840" duration="12083000" />
       <workItem from="1677595429167" duration="15075000" />
+      <workItem from="1677944060097" duration="2003000" />
+      <workItem from="1678091364687" duration="1216000" />
+      <workItem from="1678109433245" duration="1580000" />
     </task>
     <servers />
   </component>
@@ -247,13 +250,13 @@
     <SUITE FILE_PATH="coverage/backend_file$yolov5.coverage" NAME="yolov5 覆盖结果" MODIFIED="1676732174013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov5" />
     <SUITE FILE_PATH="coverage/backend_file$detect.coverage" NAME="detect 覆盖结果" MODIFIED="1675785178827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$test_detect.coverage" NAME="test_detect 覆盖结果" MODIFIED="1675785228787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/backend_file$test_model1eh.coverage" NAME="test_model1eh 覆盖结果" MODIFIED="1677653160920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
+    <SUITE FILE_PATH="coverage/backend_file$test_model1eh.coverage" NAME="test_model1eh 覆盖结果" MODIFIED="1678109977801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
     <SUITE FILE_PATH="coverage/backend_file$settings.coverage" NAME="settings 覆盖结果" MODIFIED="1677549983746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$text.coverage" NAME="text 覆盖结果" MODIFIED="1675787419233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov5" />
     <SUITE FILE_PATH="coverage/backend_file$detect__1_.coverage" NAME="detect (1) 覆盖结果" MODIFIED="1676731682796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov5" />
     <SUITE FILE_PATH="coverage/backend_file$sql_model.coverage" NAME="sql_model 覆盖结果" MODIFIED="1677576157304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$cnn_model1eh.coverage" NAME="cnn_model1eh 覆盖结果" MODIFIED="1675821513341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnn" />
-    <SUITE FILE_PATH="coverage/backend_file$Flask__app_py_.coverage" NAME="Flask (app.py) 覆盖结果" MODIFIED="1677634202383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/backend_file$Flask__app_py_.coverage" NAME="Flask (app.py) 覆盖结果" MODIFIED="1678110009869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/backend_file$mydetect.coverage" NAME="mydetect 覆盖结果" MODIFIED="1676731703623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yolov5" />
   </component>
 </project>
